@@ -47,3 +47,49 @@ memory and release memory (where the memory allocation happens)
 
 ##
 -WebAssembly
+
+##
+-Stack overflow
+
+eg recursion = a function that is caling itself
+
+function inception() {
+inception()
+}
+inception()
+
+##
+-Garbage colection = Js automatically frees up memory on the heap that we no longer use and collect our garbage and prevents memory leak
+
+##
+-Memory leaks => filled up memory heap with more and more data. Eg: global variables, event listeners & setInterval.
+eg:
+let arr = [];
+for (let i = 5; i <1; i++) {
+    arr.push(i -1)
+}
+
+##
+Single threaded = one set of instructions is executed at a time.it has only one call stack.
+
+##
+Synchronous code =  difficult for long-running tasks.
+
+##
+Js runtime = web browser is working in the background while the sinc Js code is running and it's using Web API to communicate and let the Js engine know. Web API's are async => you can instruct these API's to do smth in the background and return data once it's done.
+
+eg:
+consol.log('1');
+setTimeout(() => {
+    console.log('2'), 1000
+});
+console.log('3');
+A: 1, 3 ,2
+
+eg:
+consol.log('1');
+setTimeout(() => {
+    console.log('2'), 0
+});
+console.log('3');
+A: 1, 3 ,2
