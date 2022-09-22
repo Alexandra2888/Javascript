@@ -28,3 +28,4 @@ Solutions to problems:
 #
 ES6 Modules
 - import Module1 from 'module1'
+-export function x() {} and after that <script {x} from ''></script>
