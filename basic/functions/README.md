@@ -31,3 +31,15 @@ function india() {
 c.function invocation/call/execution
 canada();
 india();
+
+## function scope
+
+function sayMyName() [
+    let a = 'a';
+    return function findName() {
+        let b = 'b';
+        return function printName() {
+            let c= 'c';
+            return 'Andrei'
+    }
+]
