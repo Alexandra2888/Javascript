@@ -1,3 +1,5 @@
+## Js: case-senstive language that uses Unicode characters set. In Js instructions are called STATEMENTS and are separated by ; . Thae way that Js parses code and makes wrbsites dynamic is that the source text of Js scripts get scanned from left -> right and converted into a sequence of input elements which are called TOKENS.
+
 -Js: single threaded language that uses a callback.
 
 -interpreting code = taking a set of instructions and returning an answer.
