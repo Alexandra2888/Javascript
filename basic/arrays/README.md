@@ -1,5 +1,5 @@
 
-   ## arrays
+   ## arrays = collections of data
 
    ##
    let liust = ['tiger', 'cat', 'bear', 'bird'];
