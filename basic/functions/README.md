@@ -1,4 +1,11 @@
-## functions = pieces of code that perform action
+## functions = reusable pieces of code that perform action
+## 1.define the function
+## 2.call the function
+
+## function declarations = function statements = named functions
+
+## in function name => parameters
+## in function call => arguments
 
 ##
 eg
@@ -43,3 +50,5 @@ function sayMyName() [
             return 'Andrei'
     }
 ]
+
+## return keyword = processes the code that we pass into it. Is the end of the function
