@@ -160,16 +160,39 @@ for (const day of properties) {
   openStr += `${day}, `;
 }
 console.log(openStr);
+
+
 //property VALUES:
 
 
 const values = Object.values(openingHours);
 console.log(values);
 
+let favColors2 = {
+    colorOne: 'Green',
+    colorTwo: 'Blue',
+    colorThree: 'Brown'
+}
+
+let values2 = Object.values(favColors2);
+console.log(values2);
+values2.forEach((value) => console.log(value) )
+
 //loop over entire object:
 
 const entries = Object.entries(openingHours);
 //console.log(entries);
+
+let favColors3 = {
+    colorOne: 'Green',
+    colorTwo: 'Blue',
+    colorThree: 'Brown'
+}
+
+let entries2 = Object.entries(favColors3);
+console.log(entries2);
+entries2.forEach((entry) => console.log(entry))
+
 
 
 //key, value
@@ -177,6 +200,17 @@ for (const [key, { open, close }] of entries) {
     console.log(`On ${key} we open at ${open} and close at ${close}`)
 }
 
+
+let favColors = {
+    colorOne: 'Green',
+    colorTwo: 'Blue',
+    colorThree: 'Brown'
+}
+
+let keys = Object.keys(favColors);
+console.log(keys);
+
+keys.forEach((key) => console.log(key));
 
 //destructuring:
 

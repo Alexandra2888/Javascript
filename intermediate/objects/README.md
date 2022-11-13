@@ -34,3 +34,6 @@ console.log(this);
 console.log(this === window) true => "this" refers to what object it's inside of
 
 *instantialization = when you make a copy of an object and reuse the code
+
+## METHODS:
+*Object.keys() => returns all the keys from an object
