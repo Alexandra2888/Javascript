@@ -2,7 +2,7 @@
 //eg
 const obj = {
     name: 'Billy',
-    stringifyQuery() {
+    sing() {
         return 'lala' + this.name;
     },
 

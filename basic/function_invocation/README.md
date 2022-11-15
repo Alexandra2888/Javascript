@@ -1,0 +1,1 @@
+## variable environment = a place where variables can live in, in these diff stack worlds.
