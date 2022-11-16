@@ -49,3 +49,4 @@ var d = {
 }
 d.say()()
 // {name: 'jay', say[Function]}
+
