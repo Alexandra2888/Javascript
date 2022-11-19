@@ -75,4 +75,4 @@ console.log(favs[4][0]);
 console.log(`${favs[3][2]} is directing the new Batman movie`);
 
 //C.CONST with ARRAYS
-//best practice => we can mpodify the array itself but cannot redeclare it => prevents bugs
+//best practice => we can modify the array itself but cannot redeclare it => prevents bugs

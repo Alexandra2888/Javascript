@@ -79,3 +79,69 @@ console.log(user[0].job);
 console.log(`${user[0].job} is Tony's job`)
 
 
+//reference type
+//eg
+let obj1 = { value: 10 };
+let obj2 = obj1;
+let obj3 = { value: 10 };
+// obj1 === obj2 true
+//obj1 === obj3 false
+
+
+//CONTEXT VS SCOPE
+//eg
+function x () {
+    let a = a;
+}
+console.log(this);
+
+//eg
+const obj4 = {
+    a: function () {
+        console.log(this);
+    }
+}
+//undefined
+
+
+//INSTANTIALIZATION
+//eg
+class Player {
+    constructor(name, type) {
+        console.log(this);
+        this.name = name;
+        this.type = type;
+    }
+    introduce() {
+        console.log(`Hi I am ${this.name}, I'm a ${this.type}`)
+    }
+}
+
+class Wizard extends Player {
+    constructor(name, type) {
+        super(name, type)
+    }
+    play() {
+        console.log(`Wee, I'm a ${this.type}`);
+    }
+}
+const wizard1 = new Wizard('S', "healer");
+const wizard2 = new Wizard("H", "dark magic");
+
+
+//CLASSICAL INHERITANCE
+//eg
+let Player = function (name, type) {
+    this.name = name;
+    this.type = type;
+}
+Player.prototype.introduce = function () {
+    console.log(`Hi I am ${this.name}, I'm a ${this.type}`)
+    let wizard1 = new Wizard('S', "healer");
+    let wizard2 = new Wizard("H", "dark magic");
+    wizard.play = function () {
+        console.log(`Wee, Im' ${this.type}`)
+    }
+}
+
+//should't use prototype!
