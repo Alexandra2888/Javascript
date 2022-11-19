@@ -38,6 +38,8 @@ setTimeout(() => {
 }, 0)
 console.log('3');
 
+
+
 //PROMISES
 
 
@@ -50,6 +52,53 @@ const promise = new Promise((resolve, reject) => {
     }
 })
 
+
+//eg
+Promise.all(urls.map(url => {
+    return fetch(url).then(resp => resp.json())
+})
+    .then(results => {
+    console.log(results[0])
+    })
+    .catch(() => console.log(error)))
+
+
+
+    //eg
+const getData = async function () {
+    try {
+        const [users, posts, albums] = await Promise.all(urls.map(url => fetch('url')
+            .then(resp => resp.json())
+        ))
+        console.log(users);
+        console.log(albums);
+        console.log(posts);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+
+//eg
+// const urls =  [];
+// const getData = ...
+// const loopThroughUrls = url => {
+//     for (url of urls) {
+//         console.log(url);
+//         }
+//     }
+
+
+//eg
+// const getData2 = async function () {
+//     const arrayOfPromises = urls.map(url => {
+//         fetch(url);
+//         await(let request of arrayOfPromises) {
+//             const data = await request.json();
+//             console.log(data)
+//         }
+//     })
+// }
 
 //eg
 promise2
@@ -130,4 +179,7 @@ Promise.allSettled([promise1, promise2])
     .catch(e => console.log('smth failed', e))
 
 
- 
+//FETCH
+fetch('my-url').then(response => {
+    console.log(response)
+})
