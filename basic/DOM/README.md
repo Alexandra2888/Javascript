@@ -116,4 +116,8 @@ toDoItem.remove();
 
 
 ## Events = kind of inputs that we listen to when we receive some sort of user input
-eg: click, hover, scroll, fill out a form, double click, mouse over an element, drag & drop, press key(up=key is released, down=key is pressed down) etc
+eg: click, hover, scroll, fill out a form, double click, mouse over an element, drag & drop, press key(up=key is released, down=key is pressed down) etc.
+
+## Callback functions
+eg: button.addEventListener("click", addListAfterKeyPress)
+-> when that line of Js run we don't want to add ListAfterClick function to run because we are just adding the event listener now to wait for clcik/keypress. We want to let it know though that we want this action to happen when a click happens -> the function automatically (gets added the () ) every time the click happens -> we are passing a reference to the function without running it.

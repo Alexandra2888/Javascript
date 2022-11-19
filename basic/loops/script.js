@@ -21,14 +21,14 @@
 
 
 
-// //printing index
+ //printing index
 // let todosLength = todos.length;
 // for (let i = 0; i < todos.length; i++) {
 //     console.log(i);
 // }
 
 
-// //printing items
+ //printing items
 // todos.forEach(function (i) {
 //     console.log(i)
 // });
