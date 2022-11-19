@@ -22,3 +22,20 @@ let clone2 = { ...obj };
 console.log(clone2);
 let superClone = JSON.parse(JSON.stringify(obj));
 
+
+//eg
+if (name = "B") {
+    alert("Hi, B")
+} else {
+    alert("I don't know you")
+}
+
+
+//eg
+if (name = "B") {
+    alert("Hi, B")
+} else if (name = "S") {
+    alert("Hi S")
+} else {
+    alert("I don't know you")
+}

@@ -15,6 +15,26 @@
 ! functions + arrays are objects ( see standard built-in objects in MDN)
 
 
+## Comparisons
+!==
+===
+<=
+<
+>
+
+## Conditions
+* if
+* else
+* else if
+* ternary operator
+* switch
+
+
+## Logical operators
+* &&
+* ||
+
+
 ## Array.isArray
 eg:
 Array.isArray([1,2,3]) true
