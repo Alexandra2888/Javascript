@@ -1,3 +1,48 @@
+//eg
+// function bb() {
+//     var a = "Hello"
+// }
+// console.log(a) // reference error
+
+
+//eg
+function bb() {
+    var a = "Hello";
+    console.log(a)
+}
+
+
+//eg
+let b = "Can I access this?";
+function bb() {
+    let a = "Hello";
+    console.log(b);
+}
+
+
+//eg
+//scope
+var fun = 5;
+function funFunction() {
+    //child scope
+    var fun = "hello";
+    console.log(1, fun);
+}
+
+
+//eg
+function funnerFunction() {
+    var fun = "bye";
+    console.log(2, fun);
+}
+
+//eg
+function funnestFunction() {
+    fun = "aaah";
+    console.log("window", fun);
+}
+
+
 //function declaration:
 function myFunc() {
     console.log('I am a function')
