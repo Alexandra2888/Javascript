@@ -91,7 +91,7 @@ const Person1 = new Person('x', 55);
 Person1
 
 
-//expliocit binding
+//explicit binding
 const person3 = {
     name: 'K',
     age: 40,
