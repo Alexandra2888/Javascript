@@ -11,6 +11,19 @@ const obj = {
 }
 obj.two();
 
+
+//eg
+const first = () => {
+    const greet = "Hi";
+    const second = () => {
+        alert(greet);
+    }
+    return second;
+}
+const newFunction = first();
+newFunction();
+
+
 //eg
 function three() {
     return 3;
