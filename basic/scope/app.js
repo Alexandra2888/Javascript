@@ -42,3 +42,47 @@ let hehyhey = function doodle() {
 hehyhey();
 doodle();
 //refference error
+
+//eg
+var movie = "Memento";
+
+function otherMovie() {
+    var movie = "American Psyho";
+
+    function againMovie(movieName) {
+        console.log(movie, movieName)
+    }
+    againMovie("Dances with Wolfes");
+}
+//otherMovie();
+//againMovie("The Revenant");
+
+// block scoping & var -> is not blocked-scope, var is global scope
+// var name = "Clink";
+// {
+//     var name = "Guiardian";
+//     console.log(name);
+// }
+// console.log(name);
+
+
+//block scoping & let
+
+//  var name1 = "Clink";
+// {
+//    let name1 = "Guardian";
+//     console.log(name1);
+// }
+// console.log(name1);
+
+
+
+// block scope & const
+
+
+ var name1 = "Clink";
+{
+   const name1 = "Guardian";
+    console.log(name1);
+}
+console.log(name1);

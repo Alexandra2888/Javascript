@@ -1,12 +1,24 @@
-## Js: case-senstive language that uses Unicode characters set. In Js instructions are called STATEMENTS and are separated by ; . Thae way that Js parses code and makes wrbsites dynamic is that the source text of Js scripts get scanned from left -> right and converted into a sequence of input elements which are called TOKENS.
+## Js: case-senstive language that uses Unicode characters set. In Js instructions are called STATEMENTS and are separated by ; . That way that Js parses code and makes wrbsites dynamic is that the source text of Js scripts get scanned from left -> right and converted into a sequence of input elements which are called TOKENS.
 
 -Js: single threaded language that uses a callback.
+-Js is not an interpreted language, it doesn't execute code line by line, it's a compiled language.
 
 -interpreting code = taking a set of instructions and returning an answer.
 
 -compiler = works ahead of time to create a translation of what code we've just written and it
 compiles down to a language that can be understood by our machine.
 
+
+
+## Compiler theory -> 3 stages:
+* lexing & tokenization = process of converting a sequence of characters such as in a program / web page. Tokens = strings with an assigned identified mean.
+* parsing / compilation = we grab all our tokens and we convert them into abstract synthax
+* code generation = we take our abstract synthax tree and produce other executable forms of this progrma
+
+
+## Js compilation -> a 2 step process:
+* compilation / parsing
+* runtime / code execution
 
 ##
 PRO interpreters:
