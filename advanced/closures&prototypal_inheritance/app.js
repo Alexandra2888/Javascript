@@ -305,4 +305,57 @@ Array.prototype.map() = function () {
     }
     return Arr;
 }
-console.log([1,2,3].map());
+console.log([1, 2, 3].map());
+
+
+//CLOSURES
+
+function book(name) {
+    setTimeout(function otherBook() {
+        console.log(name);
+    }, 500)
+}
+
+book("Two Towers");
+
+function ask(question) {
+    return function otherQuestion() {
+        console.log(question)
+    };
+}
+let myQuestion = ask("Really?");
+myQuestion();
+
+
+let movie = "The Revenant";
+let myMovie = function () {
+    console.log(movie);
+}
+
+myMovie();
+
+movie = "Django Unchained";
+
+
+myMovie();
+
+for (var i = 1; i <= 3; i ++) {
+    setTimeout(function () {
+        console.log(`i: ${i}`);
+    }, i * 1000);
+}
+
+
+for (var i = 1; i <= 3; i++) {
+    let j = i;
+    setTimeout(function () {
+        console.log(`j: {j}`);
+    }, j * 1000);
+}
+
+
+for (let i = 1; i <= 3; i++) {
+    setTimeout(function () {
+        console.log(`i: ${i}`);
+    }, i * 1000);
+}
