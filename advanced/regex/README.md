@@ -1,0 +1,1 @@
+## REGEX = a search pattern that can be used to look for specific combinations & patterns in strings, numbers or in general inside characters.
