@@ -6,3 +6,4 @@
 
 ## this keyword = Js version of a dynamic scope, a way of having flexible, reusable behaviour
 
+## Instance = something created with the "new" keyword

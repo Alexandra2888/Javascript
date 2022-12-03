@@ -168,3 +168,57 @@ function otherOtherMovie() {
 otherMovie.call(myContext, "is not coming");
 
 otherOtherMovie();
+
+//PROTOTYPES & PROTOTIPAL CLASS
+
+class Workshop {
+    ask(question) {
+       // do smth
+    }
+}
+
+// instance of the Workshop class -> new Workshop() -> new keyword instanciates a class instance
+
+
+
+//PROTOTYPE CHAIN
+
+//DUNDER PROTO
+
+function Workshop(teacher) {
+    this.teacher = teacher;
+}
+
+Workshop.prototype.ask = function (question) {
+    console.log(this.teacher, question);
+}
+
+let js = new Workshop("Teddy");
+
+console.log(js.constructor === Workshop);
+
+console.log(js.__proto_ === Workshop.prototype);
+
+console.log(js.__proto__);
+
+console.log(Workshop.prototype);
+
+console.log(Object.getPrototypeOf(js));
+
+console.log(Object.getPrototypeOf(js) === Workshop);
+
+
+//PROTOTYPAL INHERITANCE
+
+function anotherWorkshop(teacher) {
+    Workshop.call(this, teacher);
+}
+
+anotherWorkshop.prototype = Object.create(Workshop.prototype);
+
+anotherWorkshop.prototype.speakUp = function (msj) {
+    this.ask(msj);
+}
+
+let jsClass = new anotherWorkshop("Noah");
+jsClass.speakUp("teaches Js");
