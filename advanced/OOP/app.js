@@ -136,6 +136,35 @@ class Ogre extends Character {
 const Shreck = new Ogre('Shreck', 'club', 'green');
 Shreck.attack();
 
+//DYNAMIC SCOPING
+let movie = "Avatar";
+
+function otherMovie(movieName) {
+    console.log(movie, movieName);
+}
+
+function otherOtherMovie() {
+    let movie = "District 9";
+
+    otherMovie("The GodFather")
+}
+
+otherOtherMovie();
 
 
+let myContext = {
+    movie: "Black panther 2",
+};
+function otherMovie(movieDesc) {
+    console.log(this.movie, movieDesc);
+}
 
+function otherOtherMovie() {
+    let myContext = {
+        movie: "Avatar"
+    };
+    otherMovie.call(myContext, "is coming");
+}
+otherMovie.call(myContext, "is not coming");
+
+otherOtherMovie();

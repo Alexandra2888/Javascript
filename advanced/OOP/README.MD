@@ -3,3 +3,6 @@
 * easy to extend
 * easy to maintain
 * more efficient
+
+## this keyword = Js version of a dynamic scope, a way of having flexible, reusable behaviour
+
