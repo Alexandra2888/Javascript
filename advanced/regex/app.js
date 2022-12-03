@@ -281,3 +281,57 @@ $         -> it makes sure the digits are at the end of the username
 \D*        -> zero or more occurances of characters that are not digits
 \d{2}      -> two consecutive digits
 */
+
+
+// Example 27 -> Capture Groups
+
+// let sentence = "book book";
+// let reg27X = /(\w+)\s\1/;
+// let reg27X = /(\w+)\s(\w+)/;
+
+// Testing
+// let regXTestResult = reg27X.test(sentence);
+// console.log(regXTestResult);
+
+// Matching
+/*
+\1        -> a shorthand way for repeating what is in the paranthesis
+(\w+)\s\1 -> "book book"
+(\w+)     -> "book"
+*/
+// let regXMatchResult = sentence.match(reg27X);
+// console.log(regXMatchResult);
+
+// ---------------------------------------------------------------
+// let digits = "321 321 321";
+// let reg27X = /^(\d+)\s\1\s\1$/;
+// let reg27X = /^(\d+)\s(\d+)\s(\d+)$/;
+
+// Testing
+
+// let regXTestResult = reg27X.test(digits);
+// console.log(regXTestResult);
+
+// Matching
+/*
+\1             -> a shorthand way or repeating what is in the paranthesis
+(\d+)\s\1\s\1 -> "321 321 321"
+(\d+)         -> "321"
+*/
+
+// let regXMatchResult = digits.match(reg27X);
+// console.log(regXMatchResult);
+
+
+// Example 28 -> Searching and replacing patterns within strings
+
+// Example 28.1
+// let sentence = "My dog meows";
+// let regX = /meows/;
+// let replacementText = "barks";
+// let replaceResult = sentence.replace(regX, replacementText);
+// console.log(replaceResult);
+
+// Example 28.2
+// let replacement = "My cat barks".replace(/barks/, "meows");
+// console.log(replacement);
