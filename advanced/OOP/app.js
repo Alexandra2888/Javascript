@@ -222,3 +222,172 @@ anotherWorkshop.prototype.speakUp = function (msj) {
 
 let jsClass = new anotherWorkshop("Noah");
 jsClass.speakUp("teaches Js");
+
+
+
+//FIRST CLASS
+
+class Animal {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    getInfo() {
+        return (
+            "`The name of the animal is ${this.name} and ${this.age}`"
+        )
+    }
+}
+
+
+//FIRST INSTANCES
+
+const firstAnimal = new AnimationPlaybackEvent('Rex', 2);
+console.log(firstAnimal);
+console.log(firstAnimal.getInfo());
+
+const secondAnimal = new Animal('Barney', 5);
+console.log(secondAnimal);
+console.log(secondAnimal.getInfo());
+
+INHERITANCE
+
+class Dog extends Animal {
+    constructor(age, name, breed) {
+        super(name, age)
+        this.breed = breed;
+    }
+    bark() {
+        return 'wooof'
+    }
+}
+
+class Cat extends Animal {
+    constructor(name, age, weight) {
+        super(name, age)
+        this.weight = weight;
+    }
+    meow() {
+        return 'meeeow'
+    }
+}
+
+const myDog1 = new Dog('Rex', 2, 'German Sheperd');
+console.log(myDog);
+console.log(myDog.breed);
+console.log(myDog.bark());
+
+const myCat1 = new Cat('Persian', 5, '5kg');
+console.log(myCat.getInfo);
+console.log(myCat.weight);
+console.log(myCat.meow());
+
+
+//ENCAPSULATION
+
+class Cat extends Animal {
+    #weight;   //mark as private
+    constructor(name, age, weight) {
+        super(name, age)
+        this.#weight = weight;
+    }
+    getWeight() {        //getter
+        return this.#weight
+    }
+    setWeight() {        //setter
+        this.#weight = weight;
+    }
+}
+
+const myCat2 = new Cat('Whiskers', 5, '5kg');
+console.log(myCat.getWeight);
+myCat.setWeight('6kg');
+console.log(myCat.setWeight());
+
+
+
+//POLYMORPHISM
+
+class Animal {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    makeSound() {
+        return (
+            'Some nice sound made'
+        )
+    }
+
+}
+
+
+class Dog extends Animal {
+    constructor(age, name, breed) {
+        super(name, age)
+        this.breed = breed;
+    }
+    makeSound() {
+        return 'wooof'
+    }
+}
+
+
+class Cat extends Animal {
+    constructor(name, age, weight) {
+        super(name, age)
+        this.weight = weight;
+    }
+    makeSound() {
+        return 'meeeow'
+    }
+}
+
+const myDog = new Dog('Rex', 2, 'German Sheperd');
+const myCat = new Cat('Whiskers', 5, '5kg');
+
+console.log(myDog.makeSound());
+console.log(myCat.makeSound());
+
+
+//ABSTRACT CLASS
+
+class Animal {
+    constructor(name, age) {
+        this.name - name;
+        this.age = age;
+        if (this.constructor == Animal) {
+            throw new Error("Can't create an instance of Abstract class!")
+        }
+    }
+
+    makeSound() {
+        throw new Error("abstract method doesn't have an implementation")
+    }
+}
+
+
+class Dog extends Animal {
+    constructor(age, name, breed) {
+        super(name, age)
+        this.breed = breed;
+    }
+    makeSound() {
+        return 'wooof'
+    }
+}
+
+class Cat extends Animal {
+    constructor(name, age, weight) {
+        super(name, age)
+        this.weight = weight;
+    }
+    // makeSound() {
+    //     return 'meeeow'
+    // }
+}
+
+// const myAnimal = new Animal('Barney', 3) -> can't instantiate anymore
+const myDog2 = new Dog('Rex', 2, 'Gernman Sheperd');
+const myCat3 = new Cat('Whiskers', 5, '5kg');
