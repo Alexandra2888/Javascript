@@ -183,3 +183,106 @@ Promise.allSettled([promise1, promise2])
 fetch('my-url').then(response => {
     console.log(response)
 })
+
+
+
+//JS runtime at a glance
+
+function multiply(x, y) {
+    const result = x * y;
+    console.log(result);
+}
+
+function sum(x, y) {
+    const result = x + y;
+    console.log(result);
+    multiply(20, 30);
+}
+
+function substract(x, y) {
+    const result = x - y;
+    console.log(result);
+    sum(30, 50);
+}
+
+function divide(x,  y) {
+    const result = x / y;
+    console.log(result);
+    substract(50, 40);
+}
+
+//eg
+let myFirstPromise = new Promise((resolve, reject) => {
+    setTimeout(function () {
+        resolve("Success");
+        //reject("Whoopsie")
+    }, 1000);
+});
+
+// myFirstPromise.then(
+//     (succesMsj) => {
+//         console.log(succesMsj);
+//     },
+//     (errorMsj) => {
+//         console.log(errorMsj);
+//     }
+// )
+
+//better synthax:
+
+myFirstPromise
+    .then((successMsj) => {
+        console.log(successMsj);
+    })
+    .catch((errorMsj) => {
+        console.log(errorMsj);
+    });
+
+
+    //FETCH
+fetch('url')
+    .then((response) => {
+        console.log(response);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+
+fetch('url')
+    .then((response) => {
+        return response.json();
+    })
+    .then((users) => {
+        console.log(users);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+    //ASYNC AWAIT
+
+async function getPosts() {
+    const response = await fetch('url');
+    const postData = await response.json();
+    console.log(postData);
+}
+getPosts();
+
+async function getQuestions() {
+    const questionsResponse = await fetch('url');
+
+    if (this.status !== 200) {
+        throw new Error("Error fetching data");
+    }
+
+    return (questionsData = await questionsResponse.json());
+
+}
+getQuestions()
+    .then((data) => {
+    console.log(data);
+})
+    .catch((error) => {
+        console.log(error);
+    });
