@@ -22,7 +22,7 @@ const obj1 = {
     name: 'Jacob',
     importantPerson: importantPerson
 }
-// 'Sunny' is the propererty of the global object which we created
+// 'Sunny' is the property of the global object which we created
 
 //eg
 var b = {
