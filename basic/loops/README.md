@@ -11,11 +11,13 @@ loops repeat code while reducing the number of code
 
 3: how much the variable is incremented
 
-for(initialExpression; comdition; incrementExpression) {
+```
+for (initialExpression; comdition; incrementExpression) {
 
     the code we want to run
     
 }
+```
 
 ## while
 = with a while loop wee check the condition first and then do the stuff, in a do while loop first we do then stuff and then check the condition.
