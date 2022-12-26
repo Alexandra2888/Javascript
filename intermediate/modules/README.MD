@@ -1,5 +1,6 @@
 ## MODULES
 eg:
+```
 module.exports = function add (a, b) {
     return a + b;
 }
@@ -13,4 +14,5 @@ export default function add() {
 
 import {add} from './add';
 or
-import add from './add'
+import add from './add';
+```
