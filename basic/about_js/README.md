@@ -96,7 +96,7 @@ Js runtime = web browser is working in the background while the sinc Js code is 
 
 eg:
 ```
-consol.log('1');
+console.log('1');
 setTimeout(() => {
     console.log('2'), 1000
 });
@@ -106,7 +106,7 @@ A: 1, 3 ,2
 
 eg:
 ```
-consol.log('1');
+console.log('1');
 setTimeout(() => {
     console.log('2'), 0
 });
