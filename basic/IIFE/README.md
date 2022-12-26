@@ -7,14 +7,16 @@
 eg:
 
 
-```function(){
+```
+function(){
     smth
 }();
 ```
 
 eg:
 
-```function(){
+```
+function(){
     var 1;
 }() => a is not defined
 ```
