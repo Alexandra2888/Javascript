@@ -1,0 +1,78 @@
+{
+    "sourceFile": "basic/variables/README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1673972897673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1673972904500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n \n ## variables\n var, let, const\n \n+-we can store a \n \n-\n ## Var = declares a variable optionally initializing it to a value\n \n ## Let = declares a block scope local variable optionally initializing it to a value. ( you can reassign later the variable to smth else)\n \n"
+                },
+                {
+                    "date": 1673972910874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \n ## variables\n var, let, const\n \n--we can store a \n+-we can store a value and give it a \n \n ## Var = declares a variable optionally initializing it to a value\n \n ## Let = declares a block scope local variable optionally initializing it to a value. ( you can reassign later the variable to smth else)\n"
+                },
+                {
+                    "date": 1673972915967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \n ## variables\n var, let, const\n \n--we can store a value and give it a \n+-we can store a value and give it a name, so that we can \n \n ## Var = declares a variable optionally initializing it to a value\n \n ## Let = declares a block scope local variable optionally initializing it to a value. ( you can reassign later the variable to smth else)\n"
+                },
+                {
+                    "date": 1673972924597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,11 @@\n ## variables\n var, let, const\n \n -we can store a value and give it a name, so that we can \n+*recall it\n+*use it\n+*\n \n ## Var = declares a variable optionally initializing it to a value\n \n ## Let = declares a block scope local variable optionally initializing it to a value. ( you can reassign later the variable to smth else)\n"
+                },
+                {
+                    "date": 1673972932722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,11 @@\n ## variables\n var, let, const\n \n -we can store a value and give it a name, so that we can \n-*recall it\n-*use it\n-*\n+* recall it\n+* use it\n+* change it later\n \n ## Var = declares a variable optionally initializing it to a value\n \n ## Let = declares a block scope local variable optionally initializing it to a value. ( you can reassign later the variable to smth else)\n"
+                },
+                {
+                    "date": 1673973708399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n if, else, else if, ternary operator, switch\n \n ##\n eg:\n-if (name === 'B') {\n+i```f (name === 'B') {\n     alert('Hi, B!') {\n         else if (name === 'S') {\n             alert ('HI, S') {\n                 else {\n"
+                },
+                {
+                    "date": 1673973715283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n if, else, else if, ternary operator, switch\n \n ##\n eg:\n-i```f (name === 'B') {\n+```if (name === 'B') {\n     alert('Hi, B!') {\n         else if (name === 'S') {\n             alert ('HI, S') {\n                 else {\n@@ -53,9 +53,9 @@\n                 }\n             }\n         }\n     }\n-}\n+}```\n \n ## logical operators\n &&, ||, !\n \n"
+                },
+                {
+                    "date": 1673973991144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n ## Reference type (a reference is stored to whre that type is in the memory): Arrays, Objects, Functions\n \n ## eg:\n-10 + \"34\" = 1034;\n+```10 + \"34\" = 1034;\n 10 - \"3\" = 7;\n \"hello\" - \"bye\" = NaN\n 3 > 2 true;\n 3 === 3 true;\n"
+                },
+                {
+                    "date": 1673973997663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \"hello\" - \"bye\" = NaN\n 3 > 2 true;\n 3 === 3 true;\n 3 !== 3 false;\n-4 !== 5  true;\n+4 !== 5  true;```\n \n ## comparisons\n !==, <=, >, ===, ==, >\n \n"
+                },
+                {
+                    "date": 1673974015586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,10 @@\n ## logical operators\n &&, ||, !\n \n \n+\n+\n ## Rules for naming convention:\n * has to make sense\n * be understandable\n * has to be camelCase\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673974022263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,10 +59,10 @@\n ## logical operators\n &&, ||, !\n \n \n+## Unary operators\n \n-\n ## Rules for naming convention:\n * has to make sense\n * be understandable\n * has to be camelCase\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673974033712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n ## logical operators\n &&, ||, !\n \n \n-## Unary operators\n+## Unary operators = operators where \n \n ## Rules for naming convention:\n * has to make sense\n * be understandable\n"
+                },
+                {
+                    "date": 1673974040229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n ## logical operators\n &&, ||, !\n \n \n-## Unary operators = operators where \n+## Unary operators = operators where ther's only one side\n \n ## Rules for naming convention:\n * has to make sense\n * be understandable\n"
+                },
+                {
+                    "date": 1673974054008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n \n \n ## Unary operators = operators where ther's only one side\n \n+\n ## Rules for naming convention:\n * has to make sense\n * be understandable\n * has to be camelCase\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673974059382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,10 +60,10 @@\n &&, ||, !\n \n \n ## Unary operators = operators where ther's only one side\n+eg i++\n \n-\n ## Rules for naming convention:\n * has to make sense\n * be understandable\n * has to be camelCase\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1673972897673,
+            "name": "Commit-0",
+            "content": "## Js types:\nnumber, string, boolean, undefined, null, symbol, object\n\n## Primitive types (the actual value is stored): Number, String, Boolean, Undefined, Null, Symbol, BigInt.\n\n## Reference type (a reference is stored to whre that type is in the memory): Arrays, Objects, Functions\n\n## eg:\n10 + \"34\" = 1034;\n10 - \"3\" = 7;\n\"hello\" - \"bye\" = NaN\n3 > 2 true;\n3 === 3 true;\n3 !== 3 false;\n4 !== 5  true;\n\n## comparisons\n!==, <=, >, ===, ==, >\n\n## variables\nvar, let, const\n\n\n\n## Var = declares a variable optionally initializing it to a value\n\n## Let = declares a block scope local variable optionally initializing it to a value. ( you can reassign later the variable to smth else)\n\n## Const = declare the block scope read-only name constant\n\n## Undefined = the variable has not assigned, the lack of value when smth doesn't have a real value.\neg let passsword\n\n## Null = the purpose for an assignment of a variable, like we are purposefully not assigning smth.\n\n## BigInt = special numeric type that provides suport for integers of arbitrary length.\neg: const bigInt\n\n# conditions\nif, else, else if, ternary operator, switch\n\n##\neg:\nif (name === 'B') {\n    alert('Hi, B!') {\n        else if (name === 'S') {\n            alert ('HI, S') {\n                else {\n                    alert (I don't know you)\n                }\n            }\n        }\n    }\n}\n\n## logical operators\n&&, ||, !\n\n\n## Rules for naming convention:\n* has to make sense\n* be understandable\n* has to be camelCase"
+        }
+    ]
+}

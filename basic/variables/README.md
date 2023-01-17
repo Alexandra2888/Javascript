@@ -6,19 +6,24 @@ number, string, boolean, undefined, null, symbol, object
 ## Reference type (a reference is stored to whre that type is in the memory): Arrays, Objects, Functions
 
 ## eg:
-10 + "34" = 1034;
+```10 + "34" = 1034;
 10 - "3" = 7;
 "hello" - "bye" = NaN
 3 > 2 true;
 3 === 3 true;
 3 !== 3 false;
-4 !== 5  true;
+4 !== 5  true;```
 
 ## comparisons
 !==, <=, >, ===, ==, >
 
 ## variables
 var, let, const
+
+-we can store a value and give it a name, so that we can 
+* recall it
+* use it
+* change it later
 
 ## Var = declares a variable optionally initializing it to a value
 
@@ -39,7 +44,7 @@ if, else, else if, ternary operator, switch
 
 ##
 eg:
-if (name === 'B') {
+```if (name === 'B') {
     alert('Hi, B!') {
         else if (name === 'S') {
             alert ('HI, S') {
@@ -49,11 +54,14 @@ if (name === 'B') {
             }
         }
     }
-}
+}```
 
 ## logical operators
 &&, ||, !
 
+
+## Unary operators = operators where ther's only one side
+eg i++
 
 ## Rules for naming convention:
 * has to make sense
