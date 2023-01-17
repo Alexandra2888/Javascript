@@ -1,0 +1,22 @@
+{
+    "sourceFile": "basic/primitives_types/README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1673971829158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1673971846521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-## pprimitives typwes\n\\ No newline at end of file\n+## pprimitives typwe\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1673971829158,
+            "name": "Commit-0",
+            "content": "## p"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "basic/types/README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1673972810796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1673972810796,
+            "name": "Commit-0",
+            "content": "## A. PRIMITIVES\n* number: - Js has one Number type that works with positive/negative/integers/decimal numbers\n-has all basic Math operations\n* boolean\n* string\n* undefined\n* null\n* symbol\n* bigInt\n\n## B NON-PRIMITIVES\n* object\n* array\n* function\n\n! functions + arrays are objects ( see standard built-in objects in MDN)\n\n\n## Comparisons\n!==\n===\n<=\n<\n>\n\n## Conditions\n* if\n* else\n* else if\n* ternary operator\n* switch\n\n\n## Logical operators\n* &&\n* ||\n\n\n## Array.isArray\neg:\nArray.isArray([1,2,3]) true\nArray.isArray({}) false\n\n## Pass by value, pass by reference\n\neg:\nvar a = 5;\nvar b = a;\n b ++;\n\n ## Type coercion\n\n 1 == '1'\n - see Js comparision table\n - ECMASCRIPT language specific\n\n ## Dynamic vs Static typing\n\n * strong + dynamic: Erlang, Closure, Groovy, Python, Ruby\n * strong + static: Java, C#, Scala, F#, Haskell\n * dynamic + weak: Perl, Js, PHP, VB\n * weak + static: C, C++\n\n eg for Js:\n var a = 'booya';\n a+17;\n console.log('booya');"
+        }
+    ]
+}

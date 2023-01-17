@@ -1,0 +1,118 @@
+{
+    "sourceFile": "basic/primitive_types/README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 25,
+            "patches": [
+                {
+                    "date": 1673972023666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1673972032437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,5 @@\n \n ## 1. NUMBERS\n \n - Js has one Number type that works with positive/negative/integers/decimal numbers\n+-has all basic Math operations\n"
+                },
+                {
+                    "date": 1673972287629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,6 @@\n ## 1. NUMBERS\n \n - Js has one Number type that works with positive/negative/integers/decimal numbers\n -has all basic Math operations\n+\n+\n"
+                },
+                {
+                    "date": 1673972293160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,4 +5,5 @@\n - Js has one Number type that works with positive/negative/integers/decimal numbers\n -has all basic Math operations\n \n \n+## 2. \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673972302503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,6 @@\n - Js has one Number type that works with positive/negative/integers/decimal numbers\n -has all basic Math operations\n \n \n-## 2. \n\\ No newline at end of file\n+## 2. Boolean\n+\n"
+                },
+                {
+                    "date": 1673972311098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,4 +7,6 @@\n \n \n ## 2. Boolean\n \n+## 3. Nan\n+\n"
+                },
+                {
+                    "date": 1673972316708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,4 +9,6 @@\n ## 2. Boolean\n \n ## 3. Nan\n \n+33 4. Undefined\n+\n"
+                },
+                {
+                    "date": 1673972321971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n ## 2. Boolean\n \n ## 3. Nan\n \n-33 4. Undefined\n+ 4. Undefined\n \n"
+                },
+                {
+                    "date": 1673972329556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,8 @@\n ## 2. Boolean\n \n ## 3. Nan\n \n- 4. Undefined\n+## 4. Undefined\n \n+## 5. \n+\n"
+                },
+                {
+                    "date": 1673972339479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n - Js has one Number type that works with positive/negative/integers/decimal numbers\n -has all basic Math operations\n \n \n-## 2. Boolean\n+## 2. BOOLEAN\n \n ## 3. Nan\n \n ## 4. Undefined\n"
+                },
+                {
+                    "date": 1673972348455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n \n \n ## 2. BOOLEAN\n \n-## 3. Nan\n+## 3. NaN\n \n-## 4. Undefined\n+## 4. UNDEFINED\n \n ## 5. \n \n"
+                },
+                {
+                    "date": 1673972355625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,4 +13,6 @@\n ## 4. UNDEFINED\n \n ## 5. \n \n+\n+## 6.\n"
+                },
+                {
+                    "date": 1673972367717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n ## 3. NaN\n \n ## 4. UNDEFINED\n \n-## 5. \n+## 5. Symbol\n \n \n ## 6.\n"
+                },
+                {
+                    "date": 1673972375342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,8 @@\n \n ## 5. Symbol\n \n \n-## 6.\n+## 6. Big Int\n+\n+\n+\n"
+                },
+                {
+                    "date": 1673972389136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,7 @@\n \n ## 6. Big Int\n \n \n+## \n \n+1. ARRAYS\n"
+                },
+                {
+                    "date": 1673972396473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,6 @@\n \n \n ## \n \n-1. ARRAYS\n+## 1. ARRAYS\n+\n"
+                },
+                {
+                    "date": 1673972404468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,4 +21,5 @@\n ## \n \n ## 1. ARRAYS\n \n+## 3OBJECTS\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673972453107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n - Js has one Number type that works with positive/negative/integers/decimal numbers\n -has all basic Math operations\n \n \n+\n+\n ## 2. BOOLEAN\n \n ## 3. NaN\n \n@@ -21,5 +23,5 @@\n ## \n \n ## 1. ARRAYS\n \n-## 3OBJECTS\n\\ No newline at end of file\n+## 3. OBJECTS\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673972463296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n - Js has one Number type that works with positive/negative/integers/decimal numbers\n -has all basic Math operations\n \n \n+## 2. STRIN\n \n-\n ## 2. BOOLEAN\n \n ## 3. NaN\n \n"
+                },
+                {
+                    "date": 1673972468802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n - Js has one Number type that works with positive/negative/integers/decimal numbers\n -has all basic Math operations\n \n \n-## 2. STRIN\n+## 2. STRING\n \n-## 2. BOOLEAN\n+## 3. BOOLEAN\n \n ## 3. NaN\n \n ## 4. UNDEFINED\n"
+                },
+                {
+                    "date": 1673972474178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,11 @@\n ## 2. STRING\n \n ## 3. BOOLEAN\n \n-## 3. NaN\n+## 4. NaN\n \n-## 4. UNDEFINED\n+## 5. UNDEFINED\n \n ## 5. Symbol\n \n \n"
+                },
+                {
+                    "date": 1673972489451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,14 +13,13 @@\n ## 4. NaN\n \n ## 5. UNDEFINED\n \n-## 5. Symbol\n+## 6. SYMBOL\n \n+## 7. Big Int\n \n-## 6. Big Int\n \n-\n ## \n \n ## 1. ARRAYS\n \n"
+                },
+                {
+                    "date": 1673972615696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \n ## 7. Big Int\n \n \n-## \n+## complex\n \n ## 1. ARRAYS\n \n ## 3. OBJECTS\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673972623411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,6 @@\n ## complex\n \n ## 1. ARRAYS\n \n-## 3. OBJECTS\n\\ No newline at end of file\n+## 3. OBJECTS\n+\n"
+                },
+                {
+                    "date": 1673972630400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,6 +22,7 @@\n ## complex\n \n ## 1. ARRAYS\n \n-## 3. OBJECTS\n+## 2. OBJECTS\n \n+## \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673972798798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,11 @@\n ## primitive types\n \n ## 1. NUMBERS\n \n-- Js has one Number type that works with positive/negative/integers/decimal numbers\n--has all basic Math operations\n \n \n+\n ## 2. STRING\n \n ## 3. BOOLEAN\n \n@@ -24,5 +23,5 @@\n ## 1. ARRAYS\n \n ## 2. OBJECTS\n \n-## \n\\ No newline at end of file\n+## 3. FUNCTIONS\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1673972023666,
+            "name": "Commit-0",
+            "content": "## primitive types\n\n## 1. NUMBERS\n\n- Js has one Number type that works with positive/negative/integers/decimal numbers\n"
+        }
+    ]
+}

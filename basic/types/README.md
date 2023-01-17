@@ -1,5 +1,6 @@
 ## A. PRIMITIVES
-* number
+* number: - Js has one Number type that works with positive/negative/integers/decimal numbers
+            -has all basic Math operations
 * boolean
 * string
 * undefined
