@@ -30,3 +30,23 @@ let wizardLevel2 = obj.wizardLevel2;
 // or
 // const { player2, experience2 } = obj;
 // let wizardLevel2 = obj;
+
+
+//OBJECT PROPERTIES
+
+//eg:
+const name2 = 'John Snows';
+const object = {
+    [name]: 'hello',
+    ['ray' + 'smith']: 'hihi'
+}
+
+//eg:
+const a = "Simon";
+const b = "true";
+const c = {};
+const obj = {
+    a,
+    b,
+    c
+}
