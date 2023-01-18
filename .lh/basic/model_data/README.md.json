@@ -1,0 +1,158 @@
+{
+    "sourceFile": "basic/model_data/README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 35,
+            "patches": [
+                {
+                    "date": 1673974720182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1673974992410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-## STRINGS\n\\ No newline at end of file\n+## STRINGS\n+\n+= \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673974999267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n ## STRINGS\n \n-= \n\\ No newline at end of file\n+= pieces of text or \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975005051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n ## STRINGS\n \n-= pieces of text or \n\\ No newline at end of file\n+= pieces of text or strings of characters\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975018886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n ## STRINGS\n \n-= pieces of text or strings of characters\n\\ No newline at end of file\n+= pieces of text or strings of characters\n+\n+'' or \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975053673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n ## STRINGS\n \n = pieces of text or strings of characters\n \n-'' or \n\\ No newline at end of file\n+'' or \"\"\n+\n"
+                },
+                {
+                    "date": 1673975060649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,7 @@\n = pieces of text or strings of characters\n \n '' or \"\"\n \n+## typeof\n+\n+eg\n"
+                },
+                {
+                    "date": 1673975070259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,4 +6,5 @@\n \n ## typeof\n \n eg\n+```typeof ''number\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975077455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,6 @@\n \n ## typeof\n \n eg\n-```typeof ''number\n\\ No newline at end of file\n+```typeof '87'\n+```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975088030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,7 @@\n \n ## typeof\n \n eg\n-```typeof '87'\n-```\n\\ No newline at end of file\n+```typeof '87'   //string\n+```\n+\n"
+                },
+                {
+                    "date": 1673975207692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,8 @@\n \n ## typeof\n \n eg\n-```typeof '87'   //string\n ```\n+typeof '87'   //string\n+```\n \n"
+                },
+                {
+                    "date": 1673975226996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,4 +10,6 @@\n ```\n typeof '87'   //string\n ```\n \n+## Properties\n+\n"
+                },
+                {
+                    "date": 1673975233363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,4 +12,5 @@\n ```\n \n ## Properties\n \n+* length\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975271953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,6 @@\n ```\n \n ## Properties\n \n-* length\n\\ No newline at end of file\n+* length\n+* [0]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975292267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,15 @@\n '' or \"\"\n \n ## typeof\n \n+\n eg\n ```\n typeof '87'   //string\n ```\n \n ## Properties\n \n * length\n\\ No newline at end of file\n-* [0]\n+* [0]\n+*\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975306266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,8 @@\n ## Properties\n \n * length\n * [0]\n-*\n\\ No newline at end of file\n+*\n+\n+\n+## Undefined = nothing there\n"
+                },
+                {
+                    "date": 1673975356052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n ## Properties\n \n * length\n * [0]\n-*\n+* length -1 \n \n \n ## Undefined = nothing there\n"
+                },
+                {
+                    "date": 1673975417722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,11 @@\n ## Properties\n \n * length\n * [0]\n-* length -1 \n+* length -1 => last character\n \n \n ## Undefined = nothing there\n+\n+\n+! IN a given string you cannot change characters\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975433782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n \n ## Undefined = nothing there\n \n \n-! IN a given string you cannot change characters\n\\ No newline at end of file\n+! In a given string you cannot change characters, it's immutb\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975457994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,11 @@\n * [0]\n * length -1 => last character\n \n \n+\n+\n+\n ## Undefined = nothing there\n\\ No newline at end of file\n \n \n-! In a given string you cannot change characters, it's immutb\n+! In a given string you cannot change characters, it's immutable\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975465144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,11 @@\n * [0]\n * length -1 => last character\n \n \n+## Methods\n \n+*\n \n \n ## Undefined = nothing there\n \n"
+                },
+                {
+                    "date": 1673975470297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,12 @@\n \n \n ## Methods\n \n-*\n+*searching\n \n \n+\n ## Undefined = nothing there\n \n \n ! In a given string you cannot change characters, it's immutable\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975475483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,11 @@\n \n ## Methods\n \n *searching\n+* replacing \n \n \n-\n ## Undefined = nothing there\n \n \n ! In a given string you cannot change characters, it's immutable\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975481694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,12 @@\n \n ## Methods\n \n *searching\n-* replacing \n+* replacing parts of a string\n \n \n+\n ## Undefined = nothing there\n \n \n ! In a given string you cannot change characters, it's immutable\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975487227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,13 +20,14 @@\n \n \n ## Methods\n \n-*searching\n+* searching\n * replacing parts of a string\n \n \n \n+\n ## Undefined = nothing there\n \n \n ! In a given string you cannot change characters, it's immutable\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975498789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,12 @@\n ## Methods\n \n * searching\n * replacing parts of a string\n+* changing caes (lower/uppercase)\n \n \n \n-\n ## Undefined = nothing there\n \n \n ! In a given string you cannot change characters, it's immutable\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673975505342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n ## Methods\n \n * searching\n * replacing parts of a string\n-* changing caes (lower/uppercase)\n+* changing case (lower/uppercase)\n \n \n \n ## Undefined = nothing there\n"
+                },
+                {
+                    "date": 1673976136925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n \n * searching\n * replacing parts of a string\n * changing case (lower/uppercase)\n+*\n \n \n \n ## Undefined = nothing there\n"
+                },
+                {
+                    "date": 1673976739856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,10 @@\n \n * searching\n * replacing parts of a string\n * changing case (lower/uppercase)\n-*\n+* trim\n+* indexOf()\n \n \n \n ## Undefined = nothing there\n"
+                },
+                {
+                    "date": 1673976793179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,12 +24,13 @@\n * searching\n * replacing parts of a string\n * changing case (lower/uppercase)\n * trim\n-* indexOf()\n+* indexOf() => -1 = representation of not found\n \n \n \n+\n ## Undefined = nothing there\n \n \n ! In a given string you cannot change characters, it's immutable\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673976825252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n * replacing parts of a string\n * changing case (lower/uppercase)\n * trim\n * indexOf() => -1 = representation of not found\n+* slice()\n \n \n \n \n"
+                },
+                {
+                    "date": 1673976833729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,13 +25,14 @@\n * replacing parts of a string\n * changing case (lower/uppercase)\n * trim\n * indexOf() => -1 = representation of not found\n-* slice()\n+* slice() => slices an existing string\n \n \n \n \n+\n ## Undefined = nothing there\n \n \n ! In a given string you cannot change characters, it's immutable\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673976958903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,13 +26,13 @@\n * changing case (lower/uppercase)\n * trim\n * indexOf() => -1 = representation of not found\n * slice() => slices an existing string\n+* replacxe\n \n \n \n \n-\n ## Undefined = nothing there\n \n \n ! In a given string you cannot change characters, it's immutable\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673976985386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n * changing case (lower/uppercase)\n * trim\n * indexOf() => -1 = representation of not found\n * slice() => slices an existing string\n-* replacxe\n+* replace() =< replace the foisrt occurency>\n \n \n \n \n"
+                },
+                {
+                    "date": 1673976993161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n * changing case (lower/uppercase)\n * trim\n * indexOf() => -1 = representation of not found\n * slice() => slices an existing string\n-* replace() =< replace the foisrt occurency>\n+* replace() =< replace the forst occurency\n \n \n \n \n"
+                },
+                {
+                    "date": 1673977001154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n * trim\n * indexOf() => -1 = representation of not found\n * slice() => slices an existing string\n * replace() =< replace the forst occurency\n+* sloce()\n \n \n \n \n"
+                }
+            ],
+            "date": 1673974720182,
+            "name": "Commit-0",
+            "content": "## STRINGS"
+        }
+    ]
+}

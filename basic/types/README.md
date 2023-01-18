@@ -15,6 +15,8 @@
 
 ! functions + arrays are objects ( see standard built-in objects in MDN)
 
+! In Js a variable can change its type.
+
 
 ## Comparisons
 !==
@@ -38,15 +40,15 @@
 
 ## Array.isArray
 eg:
-Array.isArray([1,2,3]) true
-Array.isArray({}) false
+```Array.isArray([1,2,3]) true
+Array.isArray({}) false```
 
 ## Pass by value, pass by reference
 
 eg:
-var a = 5;
+```var a = 5;
 var b = a;
- b ++;
+ b ++;```
 
  ## Type coercion
 
@@ -62,6 +64,6 @@ var b = a;
  * weak + static: C, C++
 
  eg for Js:
- var a = 'booya';
+ ```var a = 'booya';
  a+17;
- console.log('booya');
+ console.log('booya');```

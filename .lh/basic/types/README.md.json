@@ -3,11 +3,31 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1673972810796,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1673974626742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n ## A. PRIMITIVES\n * number: - Js has one Number type that works with positive/negative/integers/decimal numbers\n--has all basic Math operations\n+            -has all basic Math operations\n * boolean\n * string\n * undefined\n * null\n@@ -61,7 +61,7 @@\n  * dynamic + weak: Perl, Js, PHP, VB\n  * weak + static: C, C++\n \n  eg for Js:\n- var a = 'booya';\n+ ```var a = 'booya';\n  a+17;\n  console.log('booya');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673974636108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,11 +43,11 @@\n \n ## Pass by value, pass by reference\n \n eg:\n-var a = 5;\n+```var a = 5;\n var b = a;\n- b ++;\n+ b ++;```\n \n  ## Type coercion\n \n  1 == '1'\n@@ -63,5 +63,5 @@\n \n  eg for Js:\n  ```var a = 'booya';\n  a+17;\n- console.log('booya');\n\\ No newline at end of file\n+ console.log('booya');```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673974642512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,10 +37,10 @@\n \n \n ## Array.isArray\n eg:\n-Array.isArray([1,2,3]) true\n-Array.isArray({}) false\n+```Array.isArray([1,2,3]) true\n+Array.isArray({}) false```\n \n ## Pass by value, pass by reference\n \n eg:\n"
+                },
+                {
+                    "date": 1673974651021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,11 @@\n * function\n \n ! functions + arrays are objects ( see standard built-in objects in MDN)\n \n+! IN j\n \n+\n ## Comparisons\n !==\n ===\n <=\n"
+                },
+                {
+                    "date": 1673974662501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n * function\n \n ! functions + arrays are objects ( see standard built-in objects in MDN)\n \n-! IN j\n+! IN Js a variable can change its type\n \n \n ## Comparisons\n !==\n"
                 }
             ],
             "date": 1673972810796,
