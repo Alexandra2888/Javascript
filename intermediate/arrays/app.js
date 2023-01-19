@@ -1,3 +1,20 @@
+//eg:
+const array = [1,2,10,16];
+const newArray = array.forEach((num) => {
+    num * 2
+})
+console.log(newArray); //undefined
+
+//eg:
+const array2 = [1,2,10,16];
+const double = [];
+const newArray2 = array2.forEach((num) => {
+    double.push(num * 2)
+})
+console.log(double);
+
+
+
 //function declaration
 function randomNumber() {
     return Math.floor(Math.random() * 10);
