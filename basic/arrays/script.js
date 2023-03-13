@@ -76,3 +76,131 @@ console.log(`${favs[3][2]} is directing the new Batman movie`);
 
 //C.CONST with ARRAYS
 //best practice => we can modify the array itself but cannot redeclare it => prevents bugs
+
+
+
+// Powerfull Array Methods
+// forEach, map, filter, find, reduce
+// Iterate over array - no for loop required
+// Accept CALLBACK function as an argument, calls Callback against each item in a array. Reference Item in the Callback Paramater.
+
+const numbers = [0, 1, 2, 3, 4];
+
+// show all numbers
+
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+}
+
+
+// forEach
+// does not return new array
+
+const people = [
+  { name: 'bob', age: 20, position: 'developer' },
+  { name: 'peter', age: 25, position: 'designer' },
+  { name: 'susy', age: 30, position: 'the boss' },
+];
+
+function showPerson(person) {
+  console.log(person.position.toUpperCase());
+}
+
+// people.forEach(showPerson);
+
+people.forEach(function (item) {
+  console.log(item.position.toUpperCase());
+});
+
+
+// map
+// does return a new array
+// does not change size of original array
+// uses values from original array when making new one
+
+const people2 = [
+  { name: 'bob', age: 20, position: 'developer' },
+  { name: 'peter', age: 25, position: 'designer' },
+  { name: 'susy', age: 30, position: 'the boss' },
+  { name: 'anna', age: 35, position: 'the boss' },
+];
+
+const ages = people2.map(function (person) {
+  return person.age + 20;
+});
+const newPeople = people2.map(function (person) {
+  return {
+    firstName: person.name.toUpperCase(),
+    oldAge: person.age + 20,
+  };
+});
+
+const names = people2.map(function (person) {
+  return `<h1>${person.name}</h1>`;
+});
+
+document.body.innerHTML = names.join('');
+
+console.log(names);
+
+
+// filter
+// does return a new array
+// can manipulate the size of new array
+// returns based on condition
+
+const people1 = [
+  { name: 'bob', age: 20, position: 'developer' },
+  { name: 'peter', age: 25, position: 'designer' },
+  { name: 'susy', age: 30, position: 'the boss' },
+  { name: 'anna', age: 35, position: 'the boss' },
+];
+
+const youngPeople = people1.filter(function (person) {
+  return person.age <= 25;
+});
+
+const developers = people1.filter(function (person) {
+  return person.position === 'senior developer';
+});
+
+console.log(developers);
+
+
+
+// reduce
+// iterates, callback function
+// reduces to a single value - number, array, object
+// 1 parameter ('acc') - total of all calculations
+// 2 parameter ('curr') - current iteration/value
+
+const people3 = [
+  { name: 'bob', age: 20, position: 'developer', id: 1, salary: 200 },
+  { name: 'peter', age: 25, position: 'designer', id: 2, salary: 300 },
+  { name: 'susy', age: 30, position: 'the boss', id: 3, salary: 500 },
+  { name: 'anna', age: 35, position: 'the boss', id: 4, salary: 500 },
+];
+
+const total = people3.reduce(function (acc, currItem) {
+  console.log(`total ${acc}`);
+  console.log(`current money : ${currItem.salary}`);
+  acc += currItem.salary;
+  return acc;
+}, 500);
+
+console.log(total);
+
+
+// 1. create "fruits" array and store some fruit values
+// 2. setup the last item as number (random)
+// 3. assign first fruit to the variable
+// 4. re-assign last array item to the actual fruit
+// 5. log both first fruit variable and entire fruits array
+
+
+
+const fruits = ['apple', 'banana', 'orange', 45];
+
+const firstFruit = fruits[0];
+fruits[3] = 'lemon';
+console.log(firstFruit, fruits);
