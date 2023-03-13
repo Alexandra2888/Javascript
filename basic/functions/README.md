@@ -88,3 +88,10 @@ function sayMyName() [
     console.log(x * x);
 })(5);
 ```
+## helper functions
+```
+document.write({ name: 'john' })
+alert({ name: 'john' })
+console.log({ name: 'john' })
+
+```

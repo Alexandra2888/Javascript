@@ -1,5 +1,5 @@
 ## hoisting
-= the behaviour of moving the variables/ function declaratiosn to the top of their respective environment during compilation.
+= the behaviour of moving the variables/ function declaration to the top of their respective environment during compilation.
 = the entire process of compilation / parsing and code execution
 
 ! declaration using let & const hoist in a different way ! (in doc MDN says they don't hoist but it's innacurate)
