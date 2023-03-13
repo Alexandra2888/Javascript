@@ -286,3 +286,271 @@ getQuestions()
     .catch((error) => {
         console.log(error);
     });
+
+
+    // Javascript is single threaded, synchronous language.
+//
+console.log(`i'm first`);
+console.log(`i'm second`);
+console.log(`i'm third`);
+
+console.log(`i'm first`);
+boilingWater();
+console.log(`i'm third`);
+
+function boilingWater() {
+  console.log('boiling...');
+  for (let i = 0; i < 1000; i++) {
+    console.log('still not done...');
+  }
+  console.log('done.');
+}
+
+
+// Make Soup
+// boil water 10 min
+// chop carrots
+// add carrots boil for 5 min
+// chop onion
+// add onion boil for 5 min
+// BROWSER!!!!! Fetch Data, Get Geolocation, setTimeout, setTimer etc
+
+boilWater(100000);
+console.log(`chop carrot`);
+boilWater(5000);
+console.log(`chop onion`);
+boilWater(5000);
+
+function boilWater(time) {
+  console.log('boiling...');
+  for (let i = 0; i < time; i++) {
+    console.log('still not done...');
+  }
+  console.log('done.');
+}
+
+// Make Soup
+// boil water 10 min
+// chop carrots
+// add carrots boil for 5 min
+// chop onion
+// add onion boil for 5 min
+// BROWSER!!!!! Fetch Data, Get Geolocation, setTimeout, setTimer etc
+// callbacks, promises, async/await
+
+boilWater(10000);
+console.log(`chop carrot`);
+
+function boilWater(time) {
+  console.log('boiling...');
+  setTimeout(() => {
+    console.log('done.');
+  }, time);
+}
+
+// Make Soup
+// boil water 10 min
+// chop carrots
+// add carrots boil for 5 min
+// chop onion
+// add onion boil for 5 min
+// BROWSER!!!!! Fetch Data, Get Geolocation, setTimeout, setTimer etc
+// callbacks, promises, async/await
+
+boilWater();
+console.log(`chop carrot`);
+
+function boilWater() {
+  console.log('boiling...');
+  setTimeout(() => {
+    console.log('done.');
+    console.log('add carrots.');
+    setTimeout(() => {
+      console.log('carrots done');
+      console.log('add onions');
+
+      setTimeout(() => {
+        console.log('onion done');
+      }, 500);
+    }, 500);
+    console.log('chop onion');
+  }, 1000);
+}
+
+
+
+// callbacks, promises, async/await
+const heading1 = document.querySelector('.one');
+const heading2 = document.querySelector('.two');
+const heading3 = document.querySelector('.three');
+
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', () => {
+  setTimeout(() => {
+    heading1.style.color = 'red';
+    setTimeout(() => {
+      heading2.style.color = 'green';
+      setTimeout(() => {
+        heading3.style.color = 'blue';
+      }, 1000);
+    }, 2000);
+  }, 1000);
+
+  //
+});
+
+// callbacks, promises, async/await
+// const heading1 = document.querySelector('.one');
+// const heading2 = document.querySelector('.two');
+// const heading3 = document.querySelector('.three');
+// const btn = document.querySelector('.btn');
+// const container = document.querySelector('.img-container');
+// const url = 'https://source.unsplash.com/random';
+// btn.addEventListener('click', () => {
+//   loadImage(url)
+//     .then((taco) => container.appendChild(taco))
+//     .catch((err) => console.log(err));
+// });
+
+// function loadImage(url) {
+//   return new Promise((resolve, reject) => {
+//     let img = new Image();
+//     img.addEventListener('load', () => {
+//       resolve(img);
+//     });
+//     img.addEventListener('error', () => {
+//       reject(new Error(`Failed to load image from the source : ${url}`));
+//     });
+//     img.src = url;
+//   });
+// }
+
+
+// callbacks, promises, async/await
+// PROMISES - Pending, Resolved, Rejected
+// then catch - pass another callback
+// const heading1 = document.querySelector('.one');
+// const heading2 = document.querySelector('.two');
+// const heading3 = document.querySelector('.three');
+
+// const btn = document.querySelector('.btn');
+
+// btn.addEventListener('click', () => {
+//   setTimeout(() => {
+//     heading1.style.color = 'red';
+//     setTimeout(() => {
+//       heading2.style.color = 'green';
+//       setTimeout(() => {
+//         heading3.style.color = 'blue';
+//       }, 1000);
+//     }, 2000);
+//   }, 1000);
+
+//   //
+// });
+
+
+
+
+
+// callbacks, promises, async/await
+// PROMISES - Pending, Resolved, Rejected
+// then catch - pass another callback
+// const heading1 = document.querySelector('.one');
+// const heading2 = document.querySelector('.two');
+// const heading3 = document.querySelector('.three');
+
+// const btn = document.querySelector('.btn');
+
+// btn.addEventListener('click', () => {});
+
+// const promise = new Promise((resolve, reject) => {
+//   let value = false;
+//   if (value) {
+//     resolve([1, 2, 4]);
+//   } else {
+//     reject(`there was a error, value is false`);
+//   }
+// });
+// promise
+//   .then((taco) => {
+//     console.log(taco);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+
+// callbacks, promises, async/await
+// must have async
+// await waits till promise is settled
+// error handling - try/catch
+
+// async function someFunction (){
+//   await
+// }
+// const otherFunction = async() =>{
+//   await
+// }
+
+// const heading1 = document.querySelector('.one');
+// const heading2 = document.querySelector('.two');
+// const heading3 = document.querySelector('.three');
+// const btn = document.querySelector('.btn');
+// btn.addEventListener('click', async () => {
+//   const result = await displayColor();
+//   console.log(result);
+// });
+
+// async function displayColor() {
+//   try {
+//     const first = await addColor(1000, heading1, 'red');
+//     await addColor(1000, heading2, 'green');
+//     await addColor(1000, heading3, 'blue');
+//     console.log(first);
+//   } catch (error) {
+//     console.log(error);
+//   }
+//   return 'hello';
+// }
+
+// function addColor(time, element, color) {
+//   return new Promise((resolve, reject) => {
+//     if (element) {
+//       setTimeout(() => {
+//         element.style.color = color;
+//         resolve();
+//       }, time);
+//     } else {
+//       reject(new Error(`There is no such element ${element}`));
+//     }
+//   });
+// }
+
+
+// callbacks, promises, async/await
+// what if no resolve, one is rejected
+// const heading1 = document.querySelector('.one');
+// const heading2 = document.querySelector('.four');
+// const heading3 = document.querySelector('.three');
+// const btn = document.querySelector('.btn');
+// btn.addEventListener('click', () => {
+//   addColor(1000, heading1, 'red')
+//     .then(() => addColor(2000, heading2, 'green'))
+//     .then(() => addColor(1000, heading3, 'blue'))
+//     .catch((err) => console.log(err));
+// });
+
+// function addColor(time, element, color) {
+//   return new Promise((resolve, reject) => {
+//     if (element) {
+//       setTimeout(() => {
+//         element.style.color = color;
+//         resolve();
+//       }, time);
+//     } else {
+//       reject(new Error(`There is no such element ${element}`));
+//     }
+//   });
+// }
