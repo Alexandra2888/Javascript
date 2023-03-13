@@ -214,3 +214,101 @@ keys.forEach((key) => console.log(key));
 
 //destructuring:
 
+
+
+// Objects - key/value pairs  methods
+// dot notation
+
+const person = {
+  name: 'john',
+  lastName: 'peters',
+  age: 25,
+  education: false,
+  married: true,
+  siblings: ['anna', 'susan', 'peter'],
+  greeting() {
+    console.log('Hello my name is JOHN');
+  },
+};
+
+const age = person.age;
+console.log(age);
+person.name = 'bob';
+console.log(person.name);
+console.log(person.siblings[2]);
+person.greeting();
+
+
+// Objects Basics
+
+/*
+Objects are collections of key (property) value pairs
+Property values can be strings, numbers, booleans, arrays and functions however if the property value is a function it's called a method
+*/
+
+// object literal syntax,{}
+// dot notation
+
+const person = {
+  name: 'john',
+  age: 25,
+  married: true,
+  siblings: ['anna', 'peter'],
+  greet: function (name) {
+    console.log(`Hello, my name is ${name}`);
+  },
+  sayHello(name) {
+    console.log(`Hello, my name is ${name}`);
+  },
+};
+
+console.log(person.name);
+
+const name = person.name;
+console.log(name);
+person.age = 60;
+person.city = 'chicago';
+// delete property
+// delete person.siblings;
+const siblings = delete person.siblings;
+console.log(siblings);
+
+console.log(person);
+
+
+
+// nested objects
+// set variable as property value
+// dot notation vs bracket notation
+
+const age2 = 40;
+let random = 'random-value';
+random = 'age2';
+const person = {
+  name: 'john',
+  age: age2,
+  married: true,
+  siblings: ['anna', 'peter'],
+  greet: function (name) {
+    console.log(`Hello, my name is ${name}`);
+  },
+  sayHello(name) {
+    console.log(`Hello, my name is ${name}`);
+  },
+  job: {
+    title: 'developer',
+    company: {
+      name: 'coding addict',
+      address: '123 main street',
+    },
+  },
+  'random-value': 'random',
+};
+
+console.log(person.job.title);
+console.log(person.job.company.address);
+console.log(person);
+console.log(person['name']);
+console.log(person['random-value']);
+
+console.log(person[random]);
