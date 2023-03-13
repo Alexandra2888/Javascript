@@ -158,3 +158,94 @@ console.log(songYears);
 //6.Find
 let artistNames = bestSongs.find((artistName) => artistName.artist === 'Chuck Berry');
 console.log(artistNames);
+
+
+
+
+// Array Properties and Methods
+let name = ['john', 'bobo', 'barry', 'olga', 'ben'];
+
+//length
+console.log(name.length);
+console.log(name[name.length - 1]);
+
+// concat
+const lastNames = ['pepper', 'onion', 'banana'];
+const allNames = names.concat(lastNames);
+console.log(allNames);
+// reverse
+console.log(allNames.reverse());
+
+//unshift
+allNames.unshift('susy');
+allNames.unshift('anna');
+console.log(allNames);
+//shift
+allNames.shift();
+allNames.shift();
+allNames.shift();
+allNames.shift();
+console.log(allNames);
+//push
+allNames.push('susy');
+console.log(allNames);
+//pop
+allNames.pop();
+// allNames.pop();
+// allNames.pop();
+// allNames.pop();
+console.log(allNames);
+// splice - mutates original array
+const specificNames = allNames.splice(0, 3);
+console.log(specificNames);
+console.log(allNames);
+
+// Arrays and for loop
+
+const names1 = ['anna', 'susy', 'bob'];
+const lastName = 'shakeandbake';
+let newArray1 = [];
+
+//for loop
+for (let i = 0; i < names1.length; i++) {
+  console.log(i);
+  console.log(names1[i]);
+  const fullName = `${names1[i]} ${lastName}`;
+  newArray.push(fullName);
+}
+
+console.log(names1);
+console.log(newArray1);
+
+
+// Functions, return, if, arrays, for loop
+
+const gas = [20, 40, 100, 30];
+const food = [10, 40, 50];
+
+function calculateTotal(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  if (total > 100) {
+    console.log(`Whoa! You are spending way too much`);
+    return total;
+  }
+  console.log(`You are good total is less than 100`);
+
+  return total;
+}
+
+const gasTotal = calculateTotal(gas);
+const foodTotal = calculateTotal(food);
+const randomTotal = calculateTotal([200, 4000, 500, 1]);
+
+console.log({
+  gas: gasTotal,
+  food: foodTotal,
+  random: randomTotal,
+});
+
+
+
