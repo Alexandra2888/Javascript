@@ -297,3 +297,84 @@ console.log(friends[3]);
 //-> refference error
 
 
+// Functions - declare, invoke
+
+function hello() {
+  // logic
+  console.log('Hello There Bob');
+  console.log('Hello There Anna');
+  console.log('Hello There Susy');
+}
+
+hello();
+// come code here....
+hello();
+// come code here....
+hello();
+// come code here....
+
+
+// params - when declare/define
+// placeholders, local vars
+// arguments - when invoke/call/run
+// use vars/values, multiple params, undefined
+const bob = 'Bob';
+const susy = 'Susy';
+const anna = 'Anna';
+
+function greet(name, second) {
+  console.log(second);
+
+  console.log('Hello there ' + name);
+}
+
+// greet bob
+greet(4);
+// greet anna
+greet(anna, 'Bob');
+// greet susy
+greet('Susy');
+
+
+// return
+// default undefined, shortcuts, ignores after
+// 1 inch 2.54cm
+const wallHeight = 80;
+
+function calculate(value) {
+  // const newValue = value * 2.54;
+  return value * 2.54;
+  console.log('hello');
+  console.log('hello');
+  console.log('hello');
+}
+
+calculate(200);
+const width = calculate(100);
+const height = calculate(wallHeight);
+
+const dimensions = [width, height];
+console.log(dimensions);
+
+
+
+// expressions - another way define a function
+// create a variable, assign to FUNCTION (not value), use var
+// diff - hoisting, use - arrow func,libraries,
+
+// function definition/declaration
+function addValues(num1, num2) {
+  return num1 + num2;
+}
+
+const firstValue = addValues(3, 4);
+const secondValue = addValues(12, 34);
+// function expression
+const add = function (num1, num2) {
+  return num1 + num2;
+};
+// const thirdValue = add(5, 6);
+const values = [firstValue, secondValue, add(5, 6)];
+console.log(values);
+
+const multiply = (num1, num2) => num1 * num2;
