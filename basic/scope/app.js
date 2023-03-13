@@ -86,3 +86,61 @@ function otherMovie() {
     console.log(name1);
 }
 console.log(name1);
+
+
+// Global Scope vs Local Scope
+// any variable outside code block {} is said to be in Global Scope
+// can be accesss anywhere in the program
+// Gotchas : name collisions, modify by mistake
+
+let name = 'bobo';
+name = 'peter';
+
+function calculate() {
+  // some other code...
+  console.log(name);
+  name = 'orange';
+  function inner() {
+    name = 'inner name value';
+    console.log(`this is from inner function ${name}`);
+  }
+  inner();
+}
+calculate();
+
+if (true) {
+  // some other code...
+  console.log(name);
+  name = 'pants';
+}
+
+console.log(`my name is ${name} and I'm awesome`);
+
+
+// Local Scope
+// can not be access from outside code blocks
+// if - NOT VAR
+
+let name1 = 'bobo';
+
+function calculate() {
+  const name = 'john';
+  const age = 25;
+  // code goes here
+  becomesGlobal = 'global variable';
+}
+
+calculate();
+console.log(becomesGlobal);
+
+if (true) {
+  const name = 'john';
+}
+
+{
+  const name = 'john';
+  const special = 'special';
+}
+console.log(special);
+
+console.log(`my name is ${name} and I'm awesome`);
